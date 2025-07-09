@@ -13,7 +13,7 @@ def wordlegame():
         print(word)
     elif(turn <= 6):
         user_input = input()
-        if(len(user_input) == 5):
+        if(len(user_input.replace(' ', '')) == 5) and user_input.isalpha():
             turn += 1
             checkValidity(user_input)
             wordlegame()
