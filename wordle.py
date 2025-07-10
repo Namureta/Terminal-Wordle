@@ -10,8 +10,8 @@ def wordlegame():
     global end
     if(turn > 6) or end == True:
         print("End")
-        print(word)
-    elif(turn <= 6):
+        print("The correct word was" + " " + word)
+    else:
         user_input = input()
         if(len(user_input.replace(' ', '')) == 5) and user_input.isalpha():
             turn += 1
